@@ -269,6 +269,8 @@ asmlinkage void do_softirq(void)
 }
 
 #endif
+/* gparmer@gwu.edu */
+EXPORT_SYMBOL(do_softirq);
 
 /*
  * Enter an interrupt context.

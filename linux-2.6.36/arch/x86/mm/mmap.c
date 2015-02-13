@@ -134,3 +134,7 @@ void arch_pick_mmap_layout(struct mm_struct *mm)
 		mm->unmap_area = arch_unmap_area_topdown;
 	}
 }
+
+/* gparmer@gwu.edu: for composite */
+#include <linux/module.h>
+EXPORT_SYMBOL(arch_pick_mmap_layout);
